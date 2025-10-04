@@ -13,9 +13,9 @@
 
  // Main pin mapping Configuration
  //                          // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
-#define GPIO_PIN_02 GpioAction::BUTTON_PRESS_UP     // UP     | UP     | UP      | UP       | UP     | UP     |
-#define GPIO_PIN_04 GpioAction::BUTTON_PRESS_DOWN   // DOWN   | DOWN   | DOWN    | DOWN     | DOWN   | DOWN   |
-#define GPIO_PIN_03 GpioAction::BUTTON_PRESS_RIGHT  // RIGHT  | RIGHT  | RIGHT   | RIGHT    | RIGHT  | RIGHT  |
+#define GPIO_PIN_04 GpioAction::BUTTON_PRESS_UP     // UP     | UP     | UP      | UP       | UP     | UP     |
+#define GPIO_PIN_06 GpioAction::BUTTON_PRESS_DOWN   // DOWN   | DOWN   | DOWN    | DOWN     | DOWN   | DOWN   |
+#define GPIO_PIN_07 GpioAction::BUTTON_PRESS_RIGHT  // RIGHT  | RIGHT  | RIGHT   | RIGHT    | RIGHT  | RIGHT  |
 #define GPIO_PIN_05 GpioAction::BUTTON_PRESS_LEFT   // LEFT   | LEFT   | LEFT    | LEFT     | LEFT   | LEFT   |
 #define GPIO_PIN_19 GpioAction::BUTTON_PRESS_B1     // B1     | A      | B       | Cross    | 2      | K1     |
 #define GPIO_PIN_21 GpioAction::BUTTON_PRESS_B2     // B2     | B      | A       | Circle   | 3      | K2     |
@@ -33,8 +33,8 @@
  //
 #define GPIO_PIN_00 GpioAction::ASSIGNED_TO_ADDON
 #define GPIO_PIN_01 GpioAction::ASSIGNED_TO_ADDON
-#define GPIO_PIN_06 GpioAction::ASSIGNED_TO_ADDON
-#define GPIO_PIN_07 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_02 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_03 GpioAction::ASSIGNED_TO_ADDON
  
  // Keyboard Mapping Configuration
  //                                            // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
@@ -60,10 +60,10 @@
  
 #define USB_PERIPHERAL_ENABLED 1
 
-#define USB_PERIPHERAL_PIN_DPLUS 06
+#define USB_PERIPHERAL_PIN_DPLUS 02
 #define USB_PERIPHERAL_PIN_ORDER 0
  
- #define DEFAULT_INPUT_MODE_R1 INPUT_MODE_XBONE
+
  #define DEFAULT_INPUT_MODE_B4 INPUT_MODE_PS5
  #define DEFAULT_PS5AUTHENTICATION_TYPE INPUT_MODE_AUTH_TYPE_USB
  
@@ -80,9 +80,9 @@
  #define BUTTON_LAYOUT_RIGHT BUTTON_LAYOUT_BOARD_DEFINED_B
  
 #define DEFAULT_BOARD_LAYOUT_A {\
-    {GP_ELEMENT_PIN_BUTTON, {93,  11, 5, 5, 1, 1, 2,   GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {113,  11, 5, 5, 1, 1, 3,    GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {103,  21, 5, 5, 1, 1, 4,    GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {93,  11, 5, 5, 1, 1, 4,   GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {113,  11, 5, 5, 1, 1, 7,    GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {103,  21, 5, 5, 1, 1, 6,    GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {93,  31, 5, 5, 1, 1, 5,    GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {93,  45, 5, 5, 1, 1, 14,   GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {82,  56, 5, 5, 1, 1, 15,    GP_SHAPE_ELLIPSE}},\
