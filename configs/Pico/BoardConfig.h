@@ -36,7 +36,28 @@
 #define GPIO_PIN_02 GpioAction::ASSIGNED_TO_ADDON
 #define GPIO_PIN_03 GpioAction::ASSIGNED_TO_ADDON
  
-
+ // Keyboard Mapping Configuration
+ //                                            // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
+ #define KEY_DPAD_UP     HID_KEY_ARROW_UP      // UP     | UP     | UP      | UP       | UP     | UP     |
+ #define KEY_DPAD_DOWN   HID_KEY_ARROW_DOWN    // DOWN   | DOWN   | DOWN    | DOWN     | DOWN   | DOWN   |
+ #define KEY_DPAD_RIGHT  HID_KEY_ARROW_RIGHT   // RIGHT  | RIGHT  | RIGHT   | RIGHT    | RIGHT  | RIGHT  |
+ #define KEY_DPAD_LEFT   HID_KEY_ARROW_LEFT    // LEFT   | LEFT   | LEFT    | LEFT     | LEFT   | LEFT   |
+ #define KEY_BUTTON_B1   HID_KEY_SHIFT_LEFT    // B1     | A      | B       | Cross    | 2      | K1     |
+ #define KEY_BUTTON_B2   HID_KEY_Z             // B2     | B      | A       | Circle   | 3      | K2     |
+ #define KEY_BUTTON_R2   HID_KEY_X             // R2     | RT     | ZR      | R2       | 8      | K3     |
+ #define KEY_BUTTON_L2   HID_KEY_V             // L2     | LT     | ZL      | L2       | 7      | K4     |
+ #define KEY_BUTTON_B3   HID_KEY_CONTROL_LEFT  // B3     | X      | Y       | Square   | 1      | P1     |
+ #define KEY_BUTTON_B4   HID_KEY_ALT_LEFT      // B4     | Y      | X       | Triangle | 4      | P2     |
+ #define KEY_BUTTON_R1   HID_KEY_SPACE         // R1     | RB     | R       | R1       | 6      | P3     |
+ #define KEY_BUTTON_L1   HID_KEY_C             // L1     | LB     | L       | L1       | 5      | P4     |
+ #define KEY_BUTTON_S1   HID_KEY_5             // S1     | Back   | Minus   | Select   | 9      | Coin   |
+ #define KEY_BUTTON_S2   HID_KEY_1             // S2     | Start  | Plus    | Start    | 10     | Start  |
+ #define KEY_BUTTON_L3   HID_KEY_EQUAL         // L3     | LS     | LS      | L3       | 11     | LS     |
+ #define KEY_BUTTON_R3   HID_KEY_MINUS         // R3     | RS     | RS      | R3       | 12     | RS     |
+ #define KEY_BUTTON_A1   HID_KEY_9             // A1     | Guide  | Home    | PS       | 13     | ~      |
+ #define KEY_BUTTON_A2   HID_KEY_F2            // A2     | ~      | Capture | ~        | 14     | ~      |
+ #define KEY_BUTTON_FN   -1                    // Hotkey Function                                        |
+ 
 #define USB_PERIPHERAL_ENABLED 1
 
 #define USB_PERIPHERAL_PIN_DPLUS 02
@@ -45,8 +66,32 @@
 
  #define DEFAULT_INPUT_MODE_B4 INPUT_MODE_PS5
  #define DEFAULT_PS5AUTHENTICATION_TYPE INPUT_MODE_AUTH_TYPE_USB
- 
- 
+
+ #define TURBO_ENABLED 0
+ #define GPIO_PIN_9 GpioAction::BUTTON_PRESS_TURBO
+
+  #define BOARD_LEDS_PIN 10
+ #define LED_BRIGHTNESS_MAXIMUM 100
+ #define LED_BRIGHTNESS_STEPS 5
+ #define LED_FORMAT LED_FORMAT_GRB
+ #define LEDS_PER_PIXEL 1
+ #define LEDS_BASE_ANIMATION_INDEX 1
+ #define LEDS_DPAD_LEFT   0
+ #define LEDS_DPAD_DOWN   1
+ #define LEDS_DPAD_RIGHT  2
+ #define LEDS_DPAD_UP     3
+ #define LEDS_BUTTON_B3   4
+ #define LEDS_BUTTON_B4   5
+ #define LEDS_BUTTON_R1   6
+ #define LEDS_BUTTON_L1   7
+ #define LEDS_BUTTON_B1   8
+ #define LEDS_BUTTON_B2   9
+ #define LEDS_BUTTON_R2   10
+ #define LEDS_BUTTON_L2   11
+ #define LEDS_BUTTON_A1   12
+ #define LEDS_BUTTON_L3   13
+ #define LEDS_BUTTON_R3   14
+ #define LEDS_BUTTON_A2   15
 
  #define HAS_I2C_DISPLAY 1
  #define I2C0_ENABLED 1
@@ -79,7 +124,11 @@
     {GP_ELEMENT_PIN_BUTTON, {16, 12, 4, 4, 1, 1, 22,   GP_SHAPE_ELLIPSE}}\
 }
 
-
+ // Keyboard Host enabled by default
+ #define KEYBOARD_HOST_ENABLED 0
+ 
+ #define BOARD_LED_ENABLED 0
+ #define BOARD_LED_TYPE ON_BOARD_LED_MODE_MODE_INDICATOR
  
  #define DEFAULT_SPLASH \
  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
