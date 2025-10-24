@@ -23,7 +23,7 @@
 #define GPIO_PIN_26 GpioAction::BUTTON_PRESS_L2     // L2     | LT     | ZL      | L2       | 7      | K4     |
 #define GPIO_PIN_21 GpioAction::BUTTON_PRESS_B3     // B3     | X      | Y       | Square   | 1      | P1     |
 #define GPIO_PIN_19 GpioAction::BUTTON_PRESS_B4     // B4     | Y      | X       | Triangle | 4      | P2     |
-#define GPIO_PIN_14 GpioAction::BUTTON_PRESS_R1     // R1     | RB     | R       | R1       | 6      | P3     |
+#define GPIO_PIN_11 GpioAction::BUTTON_PRESS_R1     // R1     | RB     | R       | R1       | 6      | P3     |
 #define GPIO_PIN_15 GpioAction::BUTTON_PRESS_L1     // L1     | LB     | L       | L1       | 5      | P4     |
 #define GPIO_PIN_28 GpioAction::BUTTON_PRESS_S2     // S2     | Start  | Plus    | Start    | 10     | Start  |
 #define GPIO_PIN_16 GpioAction::BUTTON_PRESS_L3     // L3     | LS     | LS      | L3       | 11     | LS     |
@@ -33,8 +33,8 @@
  //
 #define GPIO_PIN_00 GpioAction::ASSIGNED_TO_ADDON
 #define GPIO_PIN_01 GpioAction::ASSIGNED_TO_ADDON
-#define GPIO_PIN_02 GpioAction::ASSIGNED_TO_ADDON
-#define GPIO_PIN_03 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_12 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_13 GpioAction::ASSIGNED_TO_ADDON
  
  // Keyboard Mapping Configuration
  //                                            // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
@@ -60,8 +60,8 @@
  
 #define USB_PERIPHERAL_ENABLED 1
 
-#define USB_PERIPHERAL_PIN_DPLUS 2
-#define USB_PERIPHERAL_PIN_ORDER 0
+#define USB_PERIPHERAL_PIN_DPLUS 13
+#define USB_PERIPHERAL_PIN_ORDER -1
  
 
  #define DEFAULT_INPUT_MODE_B4 INPUT_MODE_PS5
@@ -108,7 +108,7 @@
     {GP_ELEMENT_PIN_BUTTON, {114,  113, 5, 5, 1, 1, 5,    GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {103,  21, 5, 5, 1, 1, 6,    GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {94,  33, 5, 5, 1, 1, 7,    GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {93,  45, 5, 5, 1, 1, 14,   GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {93,  45, 5, 5, 1, 1, 11,   GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {82,  56, 5, 5, 1, 1, 15,    GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {65,  55, 5, 5, 1, 1, 16,   GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {54,  36, 5, 5, 1, 1, 17,   GP_SHAPE_ELLIPSE}},\
