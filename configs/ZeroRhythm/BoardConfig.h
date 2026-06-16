@@ -13,22 +13,21 @@
 
 // Main pin mapping Configuration
 //                                                  // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
-#define GPIO_PIN_01 GpioAction::BUTTON_PRESS_R2     // R2     | RT     | ZR      | R2       | 8      | K3     |
-#define GPIO_PIN_02 GpioAction::BUTTON_PRESS_B2     // B2     | B      | A       | Circle   | 3      | K2     |
-#define GPIO_PIN_03 GpioAction::BUTTON_PRESS_B4     // B4     | Y      | X       | Triangle | 4      | P2     |
-#define GPIO_PIN_04 GpioAction::BUTTON_PRESS_B1     // B1     | A      | B       | Cross    | 2      | K1     |
-#define GPIO_PIN_05 GpioAction::BUTTON_PRESS_B3     // B3     | X      | Y       | Square   | 1      | P1     |
-#define GPIO_PIN_06 GpioAction::BUTTON_PRESS_R1     // R1     | RB     | R       | R1       | 6      | P3     |
-#define GPIO_PIN_07 GpioAction::BUTTON_PRESS_A2     // A2     | ~      | Capture | ~        | 14     | ~      |
-#define GPIO_PIN_08 GpioAction::BUTTON_PRESS_A1     // A1     | Guide  | Home    | PS       | 13     | ~      |
-#define GPIO_PIN_09 GpioAction::BUTTON_PRESS_S1     // S1     | Back   | Minus   | Select   | 9      | Coin   |
-#define GPIO_PIN_10 GpioAction::BUTTON_PRESS_S2     // S2     | Start  | Plus    | Start    | 10     | Start  |
-#define GPIO_PIN_11 GpioAction::BUTTON_PRESS_L1     // L1     | LB     | L       | L1       | 5      | P4     |
-#define GPIO_PIN_14 GpioAction::BUTTON_PRESS_RIGHT  // RIGHT  | RIGHT  | RIGHT   | RIGHT    | RIGHT  | RIGHT  |
-#define GPIO_PIN_15 GpioAction::BUTTON_PRESS_DOWN   // DOWN   | DOWN   | DOWN    | DOWN     | DOWN   | DOWN   |
-#define GPIO_PIN_26 GpioAction::BUTTON_PRESS_UP     // UP     | UP     | UP      | UP       | UP     | UP     |
-#define GPIO_PIN_27 GpioAction::BUTTON_PRESS_LEFT   // LEFT   | LEFT   | LEFT    | LEFT     | LEFT   | LEFT   |
-#define GPIO_PIN_28 GpioAction::BUTTON_PRESS_L2     // L2     | LT     | ZL      | L2       | 7      | K4     |
+#define GPIO_PIN_06 GpioAction::BUTTON_PRESS_UP     // UP     | UP     | UP      | UP       | UP     | UP     |
+#define GPIO_PIN_08 GpioAction::BUTTON_PRESS_DOWN   // DOWN   | DOWN   | DOWN    | DOWN     | DOWN   | DOWN   |
+#define GPIO_PIN_07 GpioAction::BUTTON_PRESS_RIGHT  // RIGHT  | RIGHT  | RIGHT   | RIGHT    | RIGHT  | RIGHT  |
+#define GPIO_PIN_09 GpioAction::BUTTON_PRESS_LEFT   // LEFT   | LEFT   | LEFT    | LEFT     | LEFT   | LEFT   |
+#define GPIO_PIN_26 GpioAction::BUTTON_PRESS_B1     // B1     | A      | B       | Cross    | 2      | K1     |
+#define GPIO_PIN_22 GpioAction::BUTTON_PRESS_B2     // B2     | B      | A       | Circle   | 3      | K2     |
+#define GPIO_PIN_21 GpioAction::BUTTON_PRESS_R2     // R2     | RT     | ZR      | R2       | 8      | K3     |
+#define GPIO_PIN_20 GpioAction::BUTTON_PRESS_L2     // L2     | LT     | ZL      | L2       | 7      | K4     |
+#define GPIO_PIN_19 GpioAction::BUTTON_PRESS_B3     // B3     | X      | Y       | Square   | 1      | P1     |
+#define GPIO_PIN_18 GpioAction::BUTTON_PRESS_B4     // B4     | Y      | X       | Triangle | 4      | P2     |
+#define GPIO_PIN_17 GpioAction::BUTTON_PRESS_R1     // R1     | RB     | R       | R1       | 6      | P3     |
+#define GPIO_PIN_14 GpioAction::BUTTON_PRESS_L1     // L1     | LB     | L       | L1       | 5      | P4     |
+#define GPIO_PIN_28 GpioAction::BUTTON_PRESS_S2     // S2     | Start  | Plus    | Start    | 10     | Start  |
+#define GPIO_PIN_16 GpioAction::BUTTON_PRESS_L3     // L3     | LS     | LS      | L3       | 11     | LS     |
+#define GPIO_PIN_15 GpioAction::BUTTON_PRESS_R3
 
 // Setting GPIO pins to assigned by add-on
 //
@@ -61,7 +60,7 @@
 #define TURBO_ENABLED 1
 #define GPIO_PIN_29 GpioAction::BUTTON_PRESS_TURBO
 
-#define BOARD_LEDS_PIN 0
+#define BOARD_LEDS_PIN -1
 #define LED_BRIGHTNESS_MAXIMUM 100
 #define LED_BRIGHTNESS_STEPS 5
 #define LED_FORMAT LED_FORMAT_GRB
@@ -91,26 +90,25 @@
 #define SPLASH_DURATION 3000
 
 #define DEFAULT_BOARD_LAYOUT_A {\
-    {GP_ELEMENT_PIN_BUTTON, {5, 17, 12, 33, 1, 1, 28, GP_SHAPE_SQUARE,24}},\
-    {GP_ELEMENT_PIN_BUTTON, {19, 23, 26, 30, 1, 1, 27, GP_SHAPE_SQUARE,22}},\
-    {GP_ELEMENT_PIN_BUTTON, {27, 27, 34, 34, 1, 1, 15, GP_SHAPE_SQUARE,22}},\
-    {GP_ELEMENT_PIN_BUTTON, {31, 19, 38, 26, 1, 1, 26, GP_SHAPE_SQUARE,22}},\
-    {GP_ELEMENT_PIN_BUTTON, {35, 31, 42, 38, 1, 1, 14, GP_SHAPE_SQUARE,22}},\
-    {GP_ELEMENT_PIN_BUTTON, {42, 42, 49, 59, 1, 1, 11, GP_SHAPE_SQUARE,24}},\
-    {GP_ELEMENT_PIN_BUTTON, {52, 27, 3, 3, 1, 1, 10, GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {60, 27, 3, 3, 1, 1, 9, GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {50, 18, 3, 3, 1, 1, 29, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {92, 8, 6, 6, 1, 1, 6, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {86, 29, 6, 6, 1, 1, 7, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {100, 22, 6, 6, 1, 1, 8, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {114, 14, 6, 6, 1, 1, 9, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {71, 57, 5, 5, 1, 1, 15, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {56, 53, 5, 5, 1, 1, 14, GP_SHAPE_ELLIPSE}},\
 }
 
 #define DEFAULT_BOARD_LAYOUT_B {\
-    {GP_ELEMENT_PIN_BUTTON, {115, 17, 122, 33, 1, 1, 1, GP_SHAPE_SQUARE,156}},\
-    {GP_ELEMENT_PIN_BUTTON, {101, 23, 108, 30, 1, 1, 2, GP_SHAPE_SQUARE,68}},\
-    {GP_ELEMENT_PIN_BUTTON, {93, 27, 100, 34, 1, 1, 4, GP_SHAPE_SQUARE,68}},\
-    {GP_ELEMENT_PIN_BUTTON, {89, 19, 96, 26, 1, 1, 3, GP_SHAPE_SQUARE,68}},\
-    {GP_ELEMENT_PIN_BUTTON, {85, 31, 92, 38, 1, 1, 5, GP_SHAPE_SQUARE,68}},\
-    {GP_ELEMENT_PIN_BUTTON, {78, 42, 85, 59, 1, 1, 6, GP_SHAPE_SQUARE,156}},\
-    {GP_ELEMENT_PIN_BUTTON, {68, 27, 3, 3, 1, 1, 8, GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {76, 27, 3, 3, 1, 1, 7, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {7, 36, 5, 5, 1, 1, 19, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {18, 28, 5, 5, 1, 1, 18, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {32, 27, 5, 5, 1, 1, 17, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {44, 35, 5, 5, 1, 1, 16, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {7, 22, 5, 5, 1, 1, 26, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {18, 14, 5, 5, 1, 1, 22, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {32, 14, 5, 5, 1, 1, 21, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {44, 21, 5, 5, 1, 1, 20, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {6, 56, 4, 4, 1, 1, 28, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {18, 56, 4, 4, 1, 1, 27, GP_SHAPE_ELLIPSE}},\
 }
 
 #endif
