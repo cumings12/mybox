@@ -28,6 +28,7 @@
 #define GPIO_PIN_28 GpioAction::BUTTON_PRESS_S2     // S2     | Start  | Plus    | Start    | 10     | Start  |
 #define GPIO_PIN_16 GpioAction::BUTTON_PRESS_L3     // L3     | LS     | LS      | L3       | 11     | LS     |
 #define GPIO_PIN_15 GpioAction::BUTTON_PRESS_R3
+#define GPIO_PIN_27 GpioAction::BUTTON_PRESS_Fn
 
 // Setting GPIO pins to assigned by add-on
 //
@@ -94,8 +95,8 @@
     {GP_ELEMENT_PIN_BUTTON, {86, 29, 6, 6, 1, 1, 7, GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {100, 22, 6, 6, 1, 1, 8, GP_SHAPE_ELLIPSE}},\
     {GP_ELEMENT_PIN_BUTTON, {114, 14, 6, 6, 1, 1, 9, GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {71, 57, 5, 5, 1, 1, 15, GP_SHAPE_ELLIPSE}},\
-    {GP_ELEMENT_PIN_BUTTON, {56, 53, 5, 5, 1, 1, 14, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {71, 57, 5, 5, 1, 1, 14, GP_SHAPE_ELLIPSE}},\
+    {GP_ELEMENT_PIN_BUTTON, {56, 53, 5, 5, 1, 1, 15, GP_SHAPE_ELLIPSE}},\
 }
 
 #define DEFAULT_BOARD_LAYOUT_B {\
