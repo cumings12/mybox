@@ -28,7 +28,7 @@
 #define GPIO_PIN_28 GpioAction::BUTTON_PRESS_S2     // S2     | Start  | Plus    | Start    | 10     | Start  |
 #define GPIO_PIN_16 GpioAction::BUTTON_PRESS_L3     // L3     | LS     | LS      | L3       | 11     | LS     |
 #define GPIO_PIN_15 GpioAction::BUTTON_PRESS_R3
-#define GPIO_PIN_27 GpioAction::BUTTON_PRESS_Fn
+
 
 // Setting GPIO pins to assigned by add-on
 //
