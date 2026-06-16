@@ -57,7 +57,7 @@
 #define KEY_BUTTON_A2   HID_KEY_F2            // A2     | ~      | Capture | ~        | 14     | ~      |
 #define KEY_BUTTON_FN   -1                    // Hotkey Function                                        |
 
-#define TURBO_ENABLED 1
+#define TURBO_ENABLED 0
 #define GPIO_PIN_29 GpioAction::BUTTON_PRESS_TURBO
 
 #define BOARD_LEDS_PIN -1
